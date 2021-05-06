@@ -44,8 +44,8 @@ function normalize(input) {
 
 function isInputObjectNormalized(input) {
 	var flag = true;
-	for (id in input) {
-		var parent = input[id];
+	for (key in input) {
+		var parent = input[key];
 		if (!!parent.children) {
 			if (!isChildrenArrayNormalized(parent.children)) {
 				flag = false;
