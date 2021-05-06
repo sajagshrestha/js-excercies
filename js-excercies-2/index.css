@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: #1b1b1b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	height: 500px;
+	width: 800px;
+	border: 2px solid white;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 0px 20px #3be6c6, 0px 0px 20px #3be6c6 inset;
+}
+.ball {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: #2bebc8;
+	position: absolute;
+	box-shadow: 0px 0px 20px #3be6c6;
+}
