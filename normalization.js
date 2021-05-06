@@ -2,7 +2,7 @@ var input = {
 	1: {
 		id: 1,
 		name: "John",
-		// children: [1, 2],
+		// children: [2, 3],
 		children: [
 			{ id: 2, name: "Sally" },
 			{ id: 3, name: "Mark", children: [{ id: 4, name: "Harry" }] },
@@ -23,8 +23,8 @@ function normalize(input) {
 	if (isInputObjectNormalized(input)) {
 		return input;
 	} else {
-		for (id in input) {
-			var parent = input[id];
+		for (key in input) {
+			var parent = input[key];
 			var children = parent.children;
 			//if parent has children
 			if (!!children) {
