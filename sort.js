@@ -14,18 +14,17 @@ var arr = [
 ];
 
 function sortBy(array, key) {
-	var a = array;
 	array.forEach(function () {
-		for (var i = 0; i < a.length - 1; i++) {
+		for (var i = 0; i < array.length - 1; i++) {
 			var temp = 0;
-			if (a[i][key] > a[i + 1][key]) {
-				temp = a[i];
-				a[i] = a[i + 1];
-				a[i + 1] = temp;
+			if (array[i][key] > array[i + 1][key]) {
+				temp = array[i];
+				array[i] = array[i + 1];
+				array[i + 1] = temp;
 			}
 		}
 	});
-	return a;
+	return array;
 }
 
 var sorted = sortBy(arr, "name");
