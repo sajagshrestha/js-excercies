@@ -1,10 +1,10 @@
 var container = document.querySelector("#pointsContainer");
 var points = [
 	{ x: 20, y: 30 },
-	{ x: 200, y: 40 },
+	{ x: 200, y: 400 },
 	{ x: 120, y: 300 },
-	{ x: 205, y: 60 },
-	{ x: 421, y: 10 },
+	{ x: 205, y: 200 },
+	{ x: 421, y: 130 },
 ];
 
 points.forEach((point) => {
